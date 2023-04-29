@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talabalar</title>
+</head>
+<body>
+ <br>
+ <br>
+ <form method="get">
+    <input type="text" name="qidiruv">
+    <button>Qidirish</button>
+ </form>
+  <br>
+ <br>
+ <br>
+ <br>
+ <h1>Kutubxona tizizmidagi talabalar</h1>
+ {% for talaba in students %}
+ <br>
+ <h3>{{talaba.id}}{{talaba.ism}}({{talaba.kurs}}-kurs)</h3>
+ <h4>Kitoblari soni: {{talaba.kitob_soni}}</h4>
+ <a href="/talaba_ochir/{{talaba.id}}/"><button>O'chirish</button></a>
+ <br>
+ {% endfor %}
+
+</body>
+</html>

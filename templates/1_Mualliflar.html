@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mualliflar</title>
+</head>
+<body>
+ <br>
+ <br>
+ <br>
+ <form method="get">
+    <input type="text" name="qidiruv">
+    <button>Qidirish</button>
+ </form>
+ <br>
+ <br>
+ <br>
+{% for muallif in mualliflar %}
+ <br>
+ <h3>{{muallif.id}}{{muallif.ism}}</h3>
+<h4>Kitoblari soni: {{muallif.kitoblar_soni}}</h4>
+ {% endfor %}
+</body>
+</html>

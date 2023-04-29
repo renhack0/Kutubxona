@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mashq uchun</title>
+</head>
+<body>
+<h1>Salom. Ismim {{ism}}</h1>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h1>O'tgan oy o'qigan kitoblarim</h1>
+{% for kitob in kitoblar %}
+<br>
+<h3>{{kitob}}</h3>
+{% endfor %}
+</body>
+</html>

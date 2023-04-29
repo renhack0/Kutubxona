@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recordlar</title>
+</head>
+<body>
+ <br>
+ <br>
+ <br>
+ <form method="get">
+    <input type="text" name="qidiruv">
+    <button>Qidirish</button>
+ </form>
+ <br>
+ <br>
+ <br>
+ <h1>Kutubxona tizizmidagi recordlar</h1>
+ {% for record in records %}
+ <br>
+ <h3>{{record.id}}.{{record.kitob}}</h3>
+ <h4>Kitobnig olingan sanasi:{{record.olingan}}</h4>
+ <h4>Kitobning qaytarilish sanasi: {{kitob.qaytarilish_sana}}</h4>
+ <br>
+ {% endfor %}
+
+</body>
+</html>

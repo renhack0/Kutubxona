@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiroblar</title>
+</head>
+<body>
+ <br>
+ <br>
+ <h1>Kutubxona tizizmidagi kioblar</h1>
+ {% for kitob in books %}
+ <br>
+ <h3>{{kitob.id}}{{kitob.nomi}}({{kitob.sahifa}}-sahifa)</h3>
+ <a href="/kitob_ochir/{{kitob.id}}/"><button>O'chirish</button></a>
+ <br>
+ {% endfor %}
+
+
+</body>
+</html>

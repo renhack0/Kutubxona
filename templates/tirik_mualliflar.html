@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tirik mualliflar</title>
+</head>
+<body>
+ <br>
+ <br>
+ <h1>Mualliflar</h1>
+ {% for muallif in mualliflar %}
+ <br>
+ <h3>{{muallif.id}}{{muallif.ism}}({{muallif.kurs}}-kurs)</h3>
+ <h4>Kitoblari soni: {muallif.kitob_soni}}</h4>
+ {% endfor %}
+
+</body>
+</html>
